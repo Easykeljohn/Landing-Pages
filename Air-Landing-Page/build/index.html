@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mt-0 mb-0">
+     <!-- Navbar -->
+     <nav class="relative container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2 flex flex-row">
+                <img src=".//img/logo.png" alt="">
+                <h1 class="text-3xl font-medium">
+                    <a href="#Hero" class="ml-2">Aiir</a>
+                </h1>
+            </div>            
+            <!-- Menu Items -->
+            <div class="hidden mx-auto md:flex space-x-8 font-semibold">
+                <a href="#Hero" class="hover:text-blue-800">Home</a>
+                <a href="#features" class="hover:text-blue-800">Features</a>
+                <a href="#" class="hover:text-blue-800">Screen</a>
+                <a href="#" class="hover:text-blue-800">Pricing</a>
+                <a href="#" class="hover:text-blue-800">Testimonial</a>
+                <a href="#" class="hover:text-blue-800">Contact</a>
+            </div>
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="">Home</a>
+                <a href="">Features</a>
+                <a href="">Screen</a>
+                <a href="">Pricing</a>
+                <a href="">Testimonial</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+     </nav>
+     <!-- Hero Section -->
+     <section id="Hero">
+        <!-- flex container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <!-- Left item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2 gap-6">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    Apps compatible with Air Description of features 
+                </h1>
+                <p class="max-w-sm text-center text-gray-700 md:text-left">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#" class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline"> Get it on Google Play</a>
+                </div>
+            </div>
+            <!-- Right image -->
+            <div class="md:w-1/2">
+                <img src="./img/phone.png" alt="">
+            </div>
+        </div>
+     </section>
+        <!-- Features Section -->
+    <section id="features">
+            <div class=" container sm:w-3/4 lg:w-5/12 mx-auto px-2">
+                <h1 class="text-3xl text-center text-black">Check out our premium features</h1>
+                <p class="text-center text-gray-700 mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
+           <!-- Features Grid -->
+            <div class="container mx-auto grid grid-cols-1 gap-6 mt-10 sm:grid-cols-1 lg:grid-cols-3">
+                <!-- Feature 1 -->
+                <div class="flex flex-col items-center justify-center p-6 space-y-6 rounded-lg">
+                    <img src="./img/setting.png" alt="">
+                    <h1 class="text-xl font-semibold">Easy Features</h1>
+                    <p class="text-center text-gray-700">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex flex-col items-center justify-center p-6 space-y-6  rounded-lg">
+                    <img src="./img/userexp.png" alt="">
+                    <h1 class="text-xl font-semibold">Good User Experience</h1>
+                    <p class="text-center text-gray-700">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex flex-col items-center justify-center p-6 space-y-6 rounded-lg">
+                    <img src="./img/pen.png" alt="">
+                    <h1 class="text-xl font-semibold">Clean Design</h1>
+                    <p class="text-center text-gray-700">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+            </div>
+    </section>
+   <!-- Testimonials -->
+    <section id="testimonials" class="bg-slate-100">
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- Heading -->
+            <h2 class="4xl text-4xl font-bold text-black py-10">
+                Feedback from our customers
+            </h2>
+            <!-- Testimonial Container -->
+            <div class="flex flex-col mt-24 space-y-6 md:flex-row md:space-x-6">
+                <!-- Testimonial 1 -->
+                <div class="flex flex-col items-center p-6 space-y-6 bg-gray-10 rounded-lg md:w-1/3">
+                    <img class="w-16 -mt-14" src="./img/Avatar Image.png" alt="">
+                    <h5 class="text-lg font-bold">John Doe</h5>
+                    <p class="text-sm text-center text-gray-700">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="hidden md:flex flex-col items-center p-6 space-y-6 bg-gray-10 rounded-lg md:w-1/3">
+                    <img class="w-16 -mt-14" src="./img/Avatar Image.png" alt="">
+                    <h5 class="text-lg font-bold">John Doe</h5>
+                    <p class="text-sm text-center text-gray-700">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="hidden md:flex flex-col items-center p-6 space-y-6 bg-gray-10 rounded-lg md:w-1/3">
+                    <img class="w-16 -mt-14" src="./img/Avatar Image.png" alt="">
+                    <h5 class="text-lg font-bold">John Doe</h5>
+                    <p class="text-sm text-center text-gray-700">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="my-16 py-6">
+                <a href="#" class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline"> Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="cta" class="bg-blue-500 mt-0">
+        <div class="container flex flex-col-reverse md:flex-row items-center px-4 mx-auto mt-10 space-y-6 md:space-y-0">
+            <!-- Left item -->
+            <div class="flex flex-col mb-2 md:mb-0 space-y-6 md:w-1/2 gap-4 items-center md:items-start">
+                <h2 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-white">
+                    Now available App Download Store
+                </h2>
+                <p class="max-w-sm text-center text-white md:text-left py-4 pt-0">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#" class="p-3 px-6 pt-2 mr-2 text-white bg-black rounded-full baseline">Get it on Google Play</a>
+                        <a href="#" class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline">Get it on Google Play</a>
+                    </div>                    
+                </div>
+            </div>
+            <!-- Right image -->
+            <div class="md:w-1/2 mt-2">
+                <img src="./img/CTA_girl.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950">
+        <!-- flex container -->
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links -->
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; CodeTrybe, 2030 All rights reserved
+                </div>
+                <!-- logo -->
+                <div class="pt-2 pb-4 flex flex-row">
+                    <img src=".//img/logo.png" alt="">
+                    <h1 class="text-3xl font-medium">
+                        <a href="#Hero" class="ml-2 text-white">Aiir</a>
+                    </h1>
+                </div>
+                <!-- Social links -->
+                <div class="flex justify-center space-x-4">
+                    <!-- Link 1 -->
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="#">
+                        <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- List container -->
+            <div class="flex justify-around space-x-32 text-semibold">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-white">Home</a>
+                    <a href="" class="hover:text-white">Features</a>
+                    <a href="" class="hover:text-white">Testimonials</a>
+                    <a href="" class="hover:text-white">Contact</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-white">Careers</a>
+                    <a href="" class="hover:text-white">Community</a>
+                    <a href="" class="hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Talk to us">
+                        <button class="px-6 py-2 text-white rounded-full bg-black hover:bg-gray-600 focus:outline-none">Go</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">
+                    Copyright &copy; CodeTrybe, 2030 All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+<script src="js/script.js"></script>
+</body>
+</html>
